@@ -35,6 +35,16 @@ public class Utilisateur implements Serializable {
         this.mailUtilisateur=email;
         this.passwordUtilisateur=password;
     }
+    public Utilisateur( String nomUtilisateur, String prenomUtilisateur, String loginUtilisateur, String passwordUtilisateur, String telephoneUtilisateur, String mailUtilisateur, Groupe groupe) {
+        this.idUtilisateur = idUtilisateur;
+        this.nomUtilisateur = nomUtilisateur;
+        this.prenomUtilisateur = prenomUtilisateur;
+        this.loginUtilisateur = loginUtilisateur;
+        this.passwordUtilisateur = passwordUtilisateur;
+        this.telephoneUtilisateur = telephoneUtilisateur;
+        this.mailUtilisateur = mailUtilisateur;
+        this.groupe = groupe;
+    }
     public Utilisateur(int idUtilisateur, String nomUtilisateur, String prenomUtilisateur, String loginUtilisateur, String passwordUtilisateur, String telephoneUtilisateur, String mailUtilisateur, Groupe groupe) {
         this.idUtilisateur = idUtilisateur;
         this.nomUtilisateur = nomUtilisateur;
